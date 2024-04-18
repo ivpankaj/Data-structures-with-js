@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function enter2(){
+            let data= [12,42,56,96,360];
+            let position = document.getElementById('position').value 
+            position=parseInt(position)
+            for(let i = position;i<data.length-1;i++){
+                data[i]=data[i+1]
+               
+
+               
+            }
+            data.length= data.length-1;
+            console.warn(data)
+        }
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="enter the position" id="position">
+    <!-- <input type="text" placeholder="enter the value" id="value"> -->
+    <button id="click" onclick=enter2()>Submit</button>
+</body>
+</html>

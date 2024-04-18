@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function enterI(){
+            let array =[12,45,48,14,63];
+            let newval = document.getElementById('value').value 
+            let position = document.getElementById('position').value 
+            console.warn(array)
+            for(let i = array.length;i>=0;i--){
+                if(i>=position){
+                    array[i+1]=array[i];
+                    if(i==position){
+                        array[i]= newval;
+                    }
+                }
+                console.warn(array[i])
+            }
+           
+        }
+      
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="enter position" id="position">
+    <input type="text" placeholder="enter value"    id="value">
+    <button id="click" onclick="enterI()">submit</button>
+</body>
+</html>
+//completed
